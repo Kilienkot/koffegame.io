@@ -8,7 +8,30 @@
 </head>
 <body>
     <div class="feedback">
-       <h1>Обратная связь</h1>
+        <div class="сontainer">
+            <h1>Обратная связь</h1>
+            <form method="get" action="#">
+                <div class="phone-mail">
+                    <input type="tel" required placeholder="Ваш телефон" minlength="11" maxlength="11" class="feedback__form-tel first">
+                    <input type="email" required placeholder="Ваша почта" class="feedback__form-mail first">
+                </div>
+                <input type="text" required placeholder="Опишите кратко повод для обращения">
+                <input type="text" required placeholder="Опишите ваше предложение или проблему" class="big_problem">
+                <div class="feedback__form_chek-done">
+                    <div class="feedback__form_check">
+                        <div class="feedback__form_check-itm">
+                            <input required type="checkbox" name="pol">
+                            <label for="pol">Согласен с <a href="#" target="_blank">правилами обработки данных</a></label>
+                        </div>
+                        <div class="feedback__form_check-itm">
+                            <input required type="checkbox" name="re">
+                            <label for="re">Я хочу получить ответ на обращение</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
