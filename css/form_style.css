@@ -25,7 +25,7 @@ body .feedback {
   width: 70%;
   height: 70%;
   border: 2px solid black;
-  border-radius: 70px;
+  border-radius: 80px;
 }
 body .feedback h1 {
   display: flex;
@@ -38,9 +38,9 @@ body .feedback h1 {
   font-style: normal;
   font-size: 5dvw;
   text-align: center;
+  color: #8B4513;
 }
 body form {
-  border: 5px red solid;
   width: 100%;
   height: 50dvh;
   display: flex;
@@ -52,20 +52,40 @@ body form input {
   border: 2px solid black;
   border-radius: 50px;
   background: none;
-  height: 15%;
+  height: 20%;
+  padding-left: 5%;
+  font-size: 2dvw;
+  color: #8B4513;
+  transition: 0.5s;
+}
+body form input:hover {
+  transform: scale(1.035);
+  transition: 0.5s;
+}
+body form input:focus {
+  transform: scale(1.03);
+}
+body form input::-moz-placeholder {
+  color: #DEB887;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+body form input::placeholder {
+  color: #DEB887;
+  font-family: Montserrat;
+  font-weight: 400;
 }
 body form .phone-mail {
-  border: 5px red solid;
-  height: 15%;
+  height: 20%;
   display: flex;
   justify-content: space-between;
 }
 body form .phone-mail input {
-  width: 48%;
-  height: 100%;
+  width: 44%;
+  height: 90%;
 }
 body form .big_problem {
-  height: 20%;
+  height: 30%;
 }
 body form .feedback__form_chek-done {
   display: flex;
@@ -74,7 +94,25 @@ body form .feedback__form_chek-done {
 body form .feedback__form_chek-done .feedback__form_check-itm {
   font-size: 1.5dvw;
 }
+body form .feedback__form_chek-done .feedback__form_check-itm label {
+  cursor: pointer;
+}
 body form .feedback__form_chek-done .feedback__form_check-itm input {
+  width: auto;
+  height: auto;
   transform: scale(1.6);
-  background-color: #F5DEB3;
+}
+body form .feedback__form_chek-done input {
+  width: 30%;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+body form .feedback__form_chek-done input:hover {
+  color: #F5DEB3;
+  background-color: #8B4513;
+  border: #8B4513;
+}
+body form .feedback__form_chek-done input:active {
+  transform: scale(1.01);
 }/*# sourceMappingURL=form_style.css.map */
