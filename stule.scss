@@ -415,6 +415,7 @@ p{
             &:hover{
                 background-color: $fcolor2;
                 fill: $back;
+                stroke: $back;
                 transform: scale(1.13);
                 transition: 0.4s;
             }
