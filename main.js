@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries) => {
       }
     });
   }, {
-    threshold: 0.3
+    threshold: 0.8
   });
   
   document.querySelectorAll('.section').forEach(section => { observer.observe(section)} );
